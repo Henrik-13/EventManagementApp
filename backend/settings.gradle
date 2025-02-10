@@ -1,0 +1,6 @@
+rootProject.name = 'bhim2208-idde'
+include 'bhim2208-backend'
+include 'bhim2208-desktop'
+include 'bhim2208-web'
+include 'bhim2208-spring'
+

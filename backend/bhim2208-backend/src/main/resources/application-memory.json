@@ -1,0 +1,12 @@
+{
+  "jdbc": {
+    "createTables": true,
+    "driverClass": "",
+    "url": "",
+    "user": "",
+    "password": ""
+  },
+  "connectionPoolConfiguration": {
+    "poolSize": 1
+  }
+}

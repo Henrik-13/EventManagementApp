@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="logout" method="post">
+    <button type="submit">Logout</button>
+</form>
+<h1>Event List</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Description</th>
+        <th>Online</th>
+    </tr>
+    <tr th:each="event : ${events}">
+        <td th:text="${event.title}">Title</td>
+        <td th:text="${event.location}">Location</td>
+        <td th:text="${event.date}">Date</td>
+        <td th:text="${event.time}">Time</td>
+        <td th:text="${event.description}">Description</td>
+        <td th:text="${event.online}">Online</td>
+    </tr>
+</table>
+</body>
+</html>

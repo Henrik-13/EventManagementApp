@@ -1,0 +1,11 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation project(':bhim2208-backend')
+}
+
+application {
+    mainClass = 'edu.bbte.idde.bhim2208.presentation.CalendarApp'
+}

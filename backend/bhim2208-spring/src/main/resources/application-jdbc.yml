@@ -1,0 +1,11 @@
+spring:
+  config:
+    activate:
+      on-profile: jdbc
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/calendar
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 4
